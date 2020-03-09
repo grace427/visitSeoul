@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="./join_css.css">
+</head>
+
+<body>
+  <div>
+    <h3>로그인</h3>
+    <form name="login_form" action="./login.php" method="post">
+      <input type="radio" name="member" value="" checked>회원
+      <input type="radio" name="member" value="">비회원(주문조회)<br>
+      <div class="div-float">
+        <input id="userId" name="userId" placeholder="11번가 아이디" size="30px" type="text" style="margin:3px"><br>
+        <input id="userPw" type="text" name="userPw" size="30px" value="" style="margin:3px"><br>
+        <input type="checkbox" name="" value="" style="margin-top:7px; margin-bottom:12px;">아이디저장
+      </div>
+      <div class="div-float">
+        <input id="big-login" type="submit" name="" value="로그인"><br>
+        <div id="otp-login">
+          <a href="#"> OTP 로그인 <img src=../../Users/iamas/Desktop/사진/icon/question.png width="13px" height="13px"></img></a>
+        </div>
+      </div>
+    </form>
+    <div id="btns-bottom">
+      <button type="button" name="button"><a href="./join.html">회원가입</a></button>
+      <button type="button" name="button"><a href="#">아이디 찾기</a></button>
+      <button type="button" name="button"><a href="#">비밀번호 찾기</a></button>
+    </div>
+  </div>
+
+  <!-- <script>
+    let btn_login = document.getElementById("big-login");
+    const checkLogin = () => {
+      let userId = document.getElementById("userId");
+      let userPw = document.getElementById("userPw");
+      const id_real = "doremi";
+      const pw_real = "1234";
+
+       if (userId.value === id_real && userPw.value === pw_real) {
+        alert("환영합니다!!!");
+      }else{
+        alert("아이디 혹은 비밀번호가 맞지 않습니다. 다시 입력해주세요!");
+      }
+    }
+    btn_login.addEventListener("click", checkLogin);
+  </script> -->
+</body>
+
+</html>
